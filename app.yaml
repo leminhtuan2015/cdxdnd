@@ -1,5 +1,5 @@
-application: b3ful68
-version: cdxdnd-v1
+# application: b3ful68
+# version: cdxdnd-v1
 
 runtime: php55
 api_version: 1
@@ -23,4 +23,9 @@ handlers:
 
 - url: /admin/index.php
   script: admin/index.php
+
+env_variables:
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/b3ful68:us-central1:ksmysql;dbname=xdndedusql1
+  MYSQL_USER: root
+  MYSQL_PASSWORD: root
   
