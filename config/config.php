@@ -7,7 +7,7 @@ function connect(){
   global $link;  
   //$link = mysql_connect('localhost', 'tscdxdndedudba', 'a8yga5ygy');
   // $link = mysql_connect('localhost', 'cdxdndedusql1', 'iB6smo');
-  $link = mysql_connect('localhost', 'root', 'root');
+  $link = mysql_connect(':/cloudsql/b3ful68:us-central1:ksmysql', 'root', '');
   if (!$link) {
       die('<br/>Khong ket noi duoc: ' . mysql_error());
   }  
